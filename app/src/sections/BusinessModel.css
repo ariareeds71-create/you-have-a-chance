@@ -1,0 +1,35 @@
+.business-model__intro {
+  color: var(--color-ink-soft);
+  font-size: var(--fs-body-lg);
+  max-width: 38rem;
+  margin-bottom: var(--space-6);
+}
+
+.business-model__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--color-border);
+  margin-bottom: var(--space-6);
+}
+
+.business-model__list li {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-body);
+  color: var(--color-ink);
+}
+
+.business-model__closing {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  color: var(--color-accent-dim);
+}
+
+@media (min-width: 800px) {
+  .business-model__list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--space-6);
+  }
+}

@@ -1,0 +1,37 @@
+.door {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.door__inner {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.door__mark {
+  width: 90px;
+  height: auto;
+  margin-bottom: var(--space-6);
+}
+
+.door__statement {
+  font-size: var(--fs-body-lg);
+  color: rgba(245, 243, 238, 0.7);
+  margin-bottom: var(--space-3);
+}
+
+.door__cta {
+  font-size: var(--fs-display);
+  color: var(--color-bg);
+  margin-bottom: var(--space-5);
+}
+
+.door__body {
+  color: rgba(245, 243, 238, 0.7);
+  font-size: var(--fs-body);
+  max-width: 28rem;
+}

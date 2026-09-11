@@ -1,0 +1,70 @@
+.opportunities__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.opportunities__filter {
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-strong);
+  background: transparent;
+  font-size: var(--fs-small);
+  cursor: pointer;
+  color: var(--color-ink);
+}
+
+.opportunities__filter:hover {
+  border-color: var(--color-accent);
+}
+
+.opportunities__filter.is-active {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.opportunities__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+}
+
+.opportunities__more-filters {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-5);
+}
+
+.opportunities__more-filters-label {
+  font-size: var(--fs-caption);
+  color: var(--color-ink-faint);
+  margin-bottom: var(--space-3);
+}
+
+.opportunities__more-filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.opportunities__more-filter-chip {
+  font-size: var(--fs-caption);
+  color: var(--color-ink-soft);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  padding: 0.3rem 0.8rem;
+}
+
+@media (min-width: 700px) {
+  .opportunities__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .opportunities__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

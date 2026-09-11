@@ -1,0 +1,16 @@
+.mentors__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.mentors__cta {
+  display: flex;
+}
+
+@media (min-width: 700px) {
+  .mentors__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

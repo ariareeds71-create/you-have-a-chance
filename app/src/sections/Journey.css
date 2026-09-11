@@ -1,0 +1,21 @@
+.journey {
+  background: var(--color-bg-sunken);
+}
+
+.journey__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6) var(--space-5);
+}
+
+@media (min-width: 700px) {
+  .journey__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .journey__grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}

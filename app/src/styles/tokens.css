@@ -1,0 +1,75 @@
+:root {
+  /* ---- Color: warm stone neutrals + deep emerald accent + brass secondary ---- */
+  --color-bg: #F5F3EE;
+  --color-bg-raised: #FFFFFF;
+  --color-bg-sunken: #EBE7DD;
+  --color-ink: #16201B;
+  --color-ink-soft: #454F49;
+  --color-ink-faint: #7A8279;
+  --color-border: #DAD4C6;
+  --color-border-strong: #C3BCAA;
+
+  --color-accent: #235C46;      /* deep emerald - primary */
+  --color-accent-dim: #1A4636;
+  --color-accent-tint: #E3ECE6; /* light emerald wash for chips/badges */
+  --color-accent-ink: #0F2A20;
+
+  --color-brass: #A87C2E;       /* secondary warm accent, used sparingly */
+  --color-brass-tint: #F1E6CF;
+
+  --color-danger: #8C3B2E;
+  --color-focus: #235C46;
+
+  /* ---- Typography ---- */
+  --font-display: 'Fraunces', 'Iowan Old Style', ui-serif, Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fs-display: clamp(2.6rem, 5.2vw, 5.4rem);
+  --fs-h1: clamp(2.1rem, 3.6vw, 3.4rem);
+  --fs-h2: clamp(1.6rem, 2.4vw, 2.3rem);
+  --fs-h3: clamp(1.25rem, 1.6vw, 1.55rem);
+  --fs-body-lg: 1.2rem;
+  --fs-body: 1.05rem;
+  --fs-small: 0.92rem;
+  --fs-caption: 0.8rem;
+
+  --lh-tight: 1.08;
+  --lh-snug: 1.28;
+  --lh-body: 1.6;
+
+  /* ---- Spacing scale ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6.5rem;
+  --space-10: 9rem;
+
+  /* ---- Radii ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows (restrained) ---- */
+  --shadow-sm: 0 1px 2px rgba(22, 32, 27, 0.06);
+  --shadow-md: 0 6px 20px rgba(22, 32, 27, 0.08);
+  --shadow-lg: 0 18px 46px rgba(22, 32, 27, 0.12);
+
+  /* ---- Layout ---- */
+  --container-max: 1180px;
+  --container-narrow: 760px;
+
+  /* ---- Breakpoints (reference only, used in media queries directly) ----
+     mobile: <640px, tablet: 640-1024px, desktop: 1024-1440px, large: >1440px */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Reserved for future theming; site intentionally ships one considered
+     light identity for now so the eventual brand palette can be swapped in
+     via these tokens without touching component code. */
+}

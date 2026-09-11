@@ -1,0 +1,22 @@
+.builders__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.builders__copy .btn {
+  margin-top: var(--space-2);
+}
+
+.builders__note {
+  margin-top: var(--space-4);
+  font-size: var(--fs-caption);
+  color: var(--color-ink-faint);
+}
+
+@media (min-width: 960px) {
+  .builders__grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}

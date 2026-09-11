@@ -1,0 +1,24 @@
+.verification-gate { position: fixed; inset: 0; z-index: 140; overflow: auto; display: grid; place-items: center; padding: 25px; background: rgba(17,18,16,.96); }
+.verification-gate__panel { width: min(680px, 100%); max-height: calc(100vh - 50px); overflow: auto; padding: clamp(28px, 5vw, 52px); background: #eeebe3; color: #171914; }
+.verification-gate h2 { color: #171914; font-size: clamp(3.2rem, 8vw, 7rem); line-height: .82; margin: 26px 0; }
+.verification-gate h2 em { color: #a77d42; font-family: var(--serif); font-weight: 300; }
+.verification-gate__lede { color: #68655e; max-width: 520px; font-size: 14px; line-height: 1.6; }
+.verification-privacy { display: flex; gap: 13px; padding: 17px; margin: 28px 0; background: #e2e8df; border: 1px solid #bdcbb8; }
+.verification-privacy > span { color: #54725b; }
+.verification-privacy strong, .verification-privacy small { display: block; }
+.verification-privacy strong { font-size: 10px; letter-spacing: .13em; }
+.verification-privacy small { color: #626d60; font-size: 11px; line-height: 1.5; margin-top: 5px; }
+.document-types { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 19px; }
+.document-types button { border: 1px solid #c9c3b8; background: transparent; padding: 14px; color: #68655e; cursor: pointer; font-size: 9px; letter-spacing: .14em; }
+.document-types button.active, .document-types button:hover { color: #171914; border-color: #a77d42; background: rgba(167,125,66,.08); }
+.verification-field, .upload-field { display: block; color: #68655e; font-size: 9px; letter-spacing: .14em; margin-top: 15px; }
+.verification-field input { display: block; width: 100%; margin-top: 7px; padding: 14px; border: 1px solid #c9c3b8; background: #f7f5f0; color: #171914; font: 14px var(--sans); }
+.upload-field { position: relative; min-height: 65px; padding: 15px; border: 1px dashed #a77d42; cursor: pointer; }
+.upload-field input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.upload-field span { display: block; color: #68655e; font-size: 11px; letter-spacing: 0; margin-top: 8px; text-transform: none; }
+.verification-gate__panel > .button { width: 100%; margin-top: 22px; }
+.verification-note { color: #77746c; font-size: 10px; line-height: 1.55; margin-top: 17px; }
+.verification-status { display: block; color: #a77d42; font-size: 9px; letter-spacing: .13em; margin-top: 15px; }
+.verification-continue { display: block; width: 100%; margin-top: 12px; padding: 14px; border: 1px solid #c9c3b8; background: transparent; color: #68655e; cursor: pointer; font-size: 9px; letter-spacing: .12em; }
+.verification-continue:hover { border-color: #a77d42; color: #171914; }
+.onboarding__signed-in { color: var(--muted); font-size: 12px; line-height: 1.5; margin: -10px 0 24px; }

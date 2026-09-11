@@ -1,0 +1,20 @@
+.global-access__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.global-access__note {
+  font-size: var(--fs-body);
+  color: var(--color-ink);
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-4);
+  max-width: 28rem;
+}
+
+@media (min-width: 960px) {
+  .global-access__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

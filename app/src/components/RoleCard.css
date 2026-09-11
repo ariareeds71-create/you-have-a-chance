@@ -1,0 +1,23 @@
+.role-card {
+  padding: var(--space-6) var(--space-5);
+  border-top: 2px solid var(--color-ink);
+  background: transparent;
+  height: 100%;
+}
+
+.role-card__title {
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-2);
+}
+
+.role-card__need {
+  font-weight: 600;
+  color: var(--color-accent-dim);
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-small);
+}
+
+.role-card__description {
+  color: var(--color-ink-soft);
+  font-size: var(--fs-body);
+}

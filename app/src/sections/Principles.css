@@ -1,0 +1,32 @@
+.principles__list {
+  list-style: none;
+  counter-reset: principle;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.principles__list li {
+  counter-increment: principle;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  padding-left: 3rem;
+}
+
+.principles__list li::before {
+  content: counter(principle, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: var(--space-5);
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  color: var(--color-accent-dim);
+}
+
+.principles__list li:first-child {
+  border-top: 1px solid var(--color-border);
+}

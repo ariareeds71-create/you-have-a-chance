@@ -1,0 +1,44 @@
+.cta-section {
+  text-align: center;
+  padding: var(--space-7) var(--space-5);
+  border-radius: var(--radius-lg);
+}
+
+.cta-section--light {
+  background: var(--color-bg-sunken);
+}
+
+.cta-section--dark {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.cta-section--dark .cta-section__title {
+  color: var(--color-bg);
+}
+
+.cta-section--dark .cta-section__body {
+  color: rgba(245, 243, 238, 0.75);
+}
+
+.cta-section--dark .btn--ghost {
+  color: var(--color-bg);
+}
+
+.cta-section__title {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--space-3);
+}
+
+.cta-section__body {
+  color: var(--color-ink-soft);
+  max-width: 32rem;
+  margin: 0 auto var(--space-5);
+}
+
+.cta-section__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
